@@ -44,6 +44,9 @@ $(function() {
 
         }).then(function(response){
             console.log(response);
+
+            // clearing up previous gifs
+            $("#gifArea").empty();
             
             var results = response.data;
 
@@ -65,11 +68,44 @@ $(function() {
 
                 $("#gifArea").prepend($div); 
 
+            }    
+        });  
+    });
 
-            }
-            
-        });
+    // when user clicks on giv - it animates, when clicks one more time - stops
+
+    $("#gifArea").on("click", ".images", function(event){
+        event.preventDefault();
+
+        // current state of tge clicked gif
+        var state = $(this).attr("data-state");
+
+        // if statement to make it switch between still and animate
+        if (state === 'still'){
+            $(this).attr("src", $(this).attr("data-animate"));
+            $(this).attr("data-state", "animate");
+
+        } else {
+            $(this).attr("src", $(this).attr("data-still"));
+            $(this).attr("data-state", "still");
+        }
+    });
+
+    // take the value from users input and store it in our topic array. And it will create the button for new item in array.
+
+    $(".submit").on("click", function(event){
+        event.preventDefault();
+        console.log("submit");
+
+        var newTopic = $("#addGif").val().trim();
         
+        
+
+        topics.push(newTopic);
+
+        // calling the function to egnerate button
+        generateBtn();
+
     });
 
 
