@@ -22,7 +22,7 @@ $(function() {
             // Dynamicly generating a button for each item in topics.
             var btn = $("<button>");
             // adding a class gifBtn to our buttons
-            btn.addClass("gifBtn");
+            btn.addClass("gifBtn animated zoomIn");
             // adding a data-attribute
             btn.attr("data", topics[i]);
             // adding initial text for button
@@ -52,7 +52,7 @@ $(function() {
 
             for (var i = 0; i < results.length; i++){
                 // div yo hold gifs
-                var $div = $("<div>");
+                var $div = $("<div>").addClass("gifs animated bounceInRight");
                 // display the rating under each gif
                 var $p = $("<p>Rating: " + results[i].rating + "</p>");
                 // creating image tag and adding a class in order to design it in css later
