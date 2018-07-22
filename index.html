@@ -8,9 +8,11 @@
     <!-- Linking BootStrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <!-- Adding Google Fonts -->
-    <!-- ********** -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <!-- linking reset css -->
     <link rel="stylesheet" type="text/css"  href="./assets/css/reset.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- add animate CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <!-- linking style css -->
@@ -22,7 +24,7 @@
         <!-- Header will take all 12 columns (100%) -->
         <div class="row">
             <div class="col-md-12" id="header">
-                <h2 id="nav">GifTastic || Animated TV Show</h2>
+                <h2 id="nav">GifTastic <i class="fa fa-github" style="font-size:36px"></i> Animated TV Show</h2>
             </div>
         </div>
 
@@ -31,12 +33,14 @@
             <div class="col-md-12" id="btnArea"></div>
         </div>
 
+        <hr>
+
         <!-- Input area to add a new buttons -->
         <div class="col-md-3">
             <form>
-                <label for="addGif">Add desired Gif..</label><br>
+                <label class="labelForInput" for="addGif">Add desired Gif..</label><br>
                 <input type="text" placeholder="Type here..." id="addGif">
-                <button type="submit" class="btn submit" data="submitBtn">Submit</button>
+                <button type="submit" class="btn submit" data="submitBtn">Submit  <i class="fa fa-spinner" style="font-size:24px"></i></button>
             </form>
         </div>
 
@@ -50,7 +54,7 @@
     
     <!-- footer -->
     <footer class="footer">
-        <span class="author">Viktor Daniyelyan || UNH Coding BootCamp.</span>
+        <span class="author">Viktor Daniyelyan <i class="fa fa-address-card" style="font-size:24px"></i> UNH Coding BootCamp.</span>
     </footer>
 
     <!-- Adding Bootstrap JS -->
