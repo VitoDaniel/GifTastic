@@ -16,6 +16,10 @@ body {
     font-size: 15px;
 }
 
+#wrapper {
+    margin: 20px 20px;
+}
+
 hr {
     height: 15px;
     border: 0;
@@ -34,6 +38,7 @@ hr {
     font-size: 13px;
     text-align: center;
     border-top: 3px solid #f0ad4e;
+    margin-top: 20px;
 }
 
 #btnArea {
@@ -41,6 +46,18 @@ hr {
     margin-bottom: 13px;
 }
 
+.rating{
+    color: #f5f5f5;
+    font-family: 'Pacifico', cursive;
+    opacity: 0.6;
+}
+
+form {
+    float: right;
+}
+.clearfix {
+    overflow:auto;
+}
 .gifBtn {
     color: #f5f5f5;
     background-color: #f0ad4e;
@@ -60,13 +77,29 @@ hr {
 .submit {
     color: #f5f5f5;
     background-color: #52b5f7;
+    border-color: #52b5f7;
+    border-radius: 12px;
+    padding: 10px 20px;
     font-size: 16px;
     margin-left: 10px;
 }
 .submit:hover{
     background-color: #0056ee;
+    transform: scale(1.1)
 }
 
 .labelForInput{
     color: #f5f5f5;
+    opacity: 0.6;
+    
+}
+
+.images {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#addGif {
+    border-radius: 12px;
+    padding: 7px 14px;
 }

@@ -59,6 +59,7 @@ $(function() {
                 var $img = $("<img>").addClass("images");
                 // append images and p to our main div
                 $div.append($img, $p);
+                $p.addClass('rating');
 
                 // adding states on still and animate 
                 $img.attr("src", results[i].images.fixed_height_still.url)

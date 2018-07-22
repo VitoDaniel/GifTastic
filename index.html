@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>GifTastic || Viktor Daniyelyan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Linking BootStrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    
     <!-- Adding Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <!-- linking reset css -->
@@ -19,37 +18,26 @@
     <link rel="stylesheet" type="text/css"  href="./assets/css/style.css" />
 </head>
 <body>
-    <!-- Everything will be inside container -->
+        <!-- Header -->
+        <div  id="header">
+            <h2 id="nav">GifTastic <i class="fa fa-github" style="font-size:36px"></i> Animated TV Show</h2>
+        </div>
+        
     <div class="container-fluid" id="wrapper">
-        <!-- Header will take all 12 columns (100%) -->
-        <div class="row">
-            <div class="col-md-12" id="header">
-                <h2 id="nav">GifTastic <i class="fa fa-github" style="font-size:36px"></i> Animated TV Show</h2>
-            </div>
-        </div>
-
         <!-- Area for buttons -->
-        <div class="row">
-            <div class="col-md-12" id="btnArea"></div>
-        </div>
-
+        <div  id="btnArea"></div>
+        
         <hr>
 
         <!-- Input area to add a new buttons -->
-        <div class="col-md-3">
-            <form>
-                <label class="labelForInput" for="addGif">Add desired Gif..</label><br>
-                <input type="text" placeholder="Type here..." id="addGif">
-                <button type="submit" class="btn submit" data="submitBtn">Submit  <i class="fa fa-spinner" style="font-size:24px"></i></button>
-            </form>
-        </div>
+        <form class="clearfix">
+            <label class="labelForInput" for="addGif">Add desired Gif..</label><br>
+            <input type="text" placeholder="Type here..." id="addGif">
+            <button type="submit" class="btn submit" data="submitBtn">Submit  <i class="fa fa-spinner" style="font-size:24px"></i></button>
+        </form>
 
-        
         <!-- Are for new Gif's -->
-        <div class="row">
-            <div class="col-md-9" id="gifArea"></div>
-        </div>
-
+        <div id="gifArea" class="clearfix"></div>
     </div>
     
     <!-- footer -->
