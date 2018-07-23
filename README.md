@@ -2,6 +2,8 @@
 User will have 6 ready buttons with content of different animated tv shows. Each button will generate 10 gifs from GIFY API.
 User have an option to add the button of his choice. 
 
+![](assets/img.png)
+
 
 Built with:
 1. HTML
