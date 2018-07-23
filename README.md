@@ -3,7 +3,7 @@
 Each button will generate **10 gifs** from **GIFY API.**
 User have an option to add the button of his choice. 
 
-![](assets/img.png)
+![](assets/gif.png)
 
 
 Built with:
