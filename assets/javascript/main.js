@@ -68,6 +68,7 @@ $(function() {
                     .attr("data-state", "still");
 
                 $("#gifArea").prepend($div); 
+               
 
             }    
         });  
@@ -103,6 +104,8 @@ $(function() {
         
 
         topics.push(newTopic);
+
+        $("#addGif").val("");
 
         // calling the function to egnerate button
         generateBtn();
