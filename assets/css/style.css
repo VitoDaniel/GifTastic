@@ -55,10 +55,10 @@ form {
     padding:10px 25px;
 }
 
-
-.clearfix {
-    overflow:auto;
+#gifArea {
+    clear: both;
 }
+
 
 
 .gifBtn {
@@ -103,6 +103,9 @@ form {
     margin: 10px auto;
     padding: 7px 7px;
 
+}
+.gifs {
+    float: left;
 }
 
 .rating{
