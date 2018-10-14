@@ -6,7 +6,7 @@ User have an option to add the button of his choice.
 ![](assets/gif.png)
 
 
-Built with:
+## Technologies used:
 1. HTML
 1. CSS
 1. JavaSript
